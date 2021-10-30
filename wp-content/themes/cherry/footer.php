@@ -1,5 +1,5 @@
 <?php include_once('blocks/footer-gallery.php'); ?>
-    <?php $style_num = (rand(1,4)); ?>
+    <?php $style_num = (rand(1,1)); ?>
     <footer class="footer">
         <div class="container">
             <div class="row">
