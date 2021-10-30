@@ -24,6 +24,7 @@ node_modules/
 .DS_Store
 index.php
 license.txt
+old/*
 old/.DS_Store
 old/.ftpquota
 old/.htaccess
