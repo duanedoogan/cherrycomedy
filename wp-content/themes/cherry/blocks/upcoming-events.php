@@ -3,7 +3,7 @@
     $events = get_posts(
         array(
             'post_type' => 'event',
-            'posts_per_page' => '4',
+            'posts_per_page' => '5',
             'meta_key' => 'date',
             'orderby' => 'meta_value',
             'order' => 'ASC',
