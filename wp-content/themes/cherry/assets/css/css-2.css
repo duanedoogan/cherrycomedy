@@ -1,0 +1,2717 @@
+body, html {
+    font-family: 'Futura PT';
+    font-size: 18px;
+    scroll-behavior: smooth;
+    overflow-x: hidden;
+}
+
+::selection {
+    background: #ec5cb3;
+    color: #6931c0;
+}
+
+/* Chrome, Safari, Edge, Opera */
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+/* Firefox */
+input[type=number] {
+  -moz-appearance: textfield;
+}
+
+/* list view */
+span.tribe-tickets-left, .tribe-events-c-small-cta__stock {
+  display: none !important;
+}
+ 
+/* single view */
+span.tribe-tickets-remaining {
+  display: none !important;
+}
+ 
+.tribe-tickets__item__extra__available{
+    display: none !important;
+}
+
+/* == FONTS == */
+
+@font-face {
+    font-family: 'Monument Extended';
+    src: url('/wp-content/themes/cherry/assets/fonts/MonumentExtended-Ultrabold.woff2') format('woff2'),
+        url('/wp-content/themes/cherry/assets/fonts/MonumentExtended-Ultrabold.woff') format('woff');
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Futura PT';
+    src: url('/wp-content/themes/cherry/assets/fonts/FuturaPT-Light.woff2') format('woff2'),
+        url('/wp-content/themes/cherry/assets/fonts/FuturaPT-Light.woff') format('woff');
+    font-weight: 300;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Futura PT';
+    src: url('/wp-content/themes/cherry/assets/fonts/FuturaPT-LightObl.woff2') format('woff2'),
+        url('/wp-content/themes/cherry/assets/fonts/FuturaPT-LightObl.woff') format('woff');
+    font-weight: 300;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Futura PT Book';
+    src: url('/wp-content/themes/cherry/assets/fonts/FuturaPT-Book.woff2') format('woff2'),
+        url('/wp-content/themes/cherry/assets/fonts/FuturaPT-Book.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Futura PT Book';
+    src: url('/wp-content/themes/cherry/assets/fonts/FuturaPT-BookObl.woff2') format('woff2'),
+        url('/wp-content/themes/cherry/assets/fonts/FuturaPT-BookObl.woff') format('woff');
+    font-weight: normal;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Futura PT';
+    src: url('/wp-content/themes/cherry/assets/fonts/FuturaPT-Medium.woff2') format('woff2'),
+        url('/wp-content/themes/cherry/assets/fonts/FuturaPT-Medium.woff') format('woff');
+    font-weight: 500;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Futura PT';
+    src: url('/wp-content/themes/cherry/assets/fonts/FuturaPT-MediumObl.woff2') format('woff2'),
+        url('/wp-content/themes/cherry/assets/fonts/FuturaPT-MediumObl.woff') format('woff');
+    font-weight: 500;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Futura PT Demi';
+    src: url('/wp-content/themes/cherry/assets/fonts/FuturaPT-Demi.woff2') format('woff2'),
+        url('/wp-content/themes/cherry/assets/fonts/FuturaPT-Demi.woff') format('woff');
+    font-weight: 600;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Futura PT Demi';
+    src: url('/wp-content/themes/cherry/assets/fonts/FuturaPT-DemiObl.woff2') format('woff2'),
+        url('/wp-content/themes/cherry/assets/fonts/FuturaPT-DemiObl.woff') format('woff');
+    font-weight: 600;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Futura PT';
+    src: url('/wp-content/themes/cherry/assets/fonts/FuturaPT-Bold.woff2') format('woff2'),
+        url('/wp-content/themes/cherry/assets/fonts/FuturaPT-Bold.woff') format('woff');
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Futura PT';
+    src: url('/wp-content/themes/cherry/assets/fonts/FuturaPT-BoldObl.woff2') format('woff2'),
+        url('/wp-content/themes/cherry/assets/fonts/FuturaPT-BoldObl.woff') format('woff');
+    font-weight: bold;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Futura PT';
+    src: url('/wp-content/themes/cherry/assets/fonts/FuturaPT-HeavyObl.woff2') format('woff2'),
+        url('/wp-content/themes/cherry/assets/fonts/FuturaPT-HeavyObl.woff') format('woff');
+    font-weight: 900;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Futura PT';
+    src: url('/wp-content/themes/cherry/assets/fonts/FuturaPT-Heavy.woff2') format('woff2'),
+        url('/wp-content/themes/cherry/assets/fonts/FuturaPT-Heavy.woff') format('woff');
+    font-weight: 900;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Druk Cyr';
+    src: url('/wp-content/themes/cherry/assets/fonts/DrukCyr-Medium.woff2') format('woff2'),
+        url('/wp-content/themes/cherry/assets/fonts/DrukCyr-Medium.woff') format('woff');
+    font-weight: 500;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Druk Cyr';
+    src: url('/wp-content/themes/cherry/assets/fonts/DrukCyr-Heavy.woff2') format('woff2'),
+        url('/wp-content/themes/cherry/assets/fonts/DrukCyr-Heavy.woff') format('woff');
+    font-weight: 900;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Rama Gothic M';
+    src: url('/wp-content/themes/cherry/assets/fonts/RamaGothicM.woff2') format('woff2'),
+        url('/wp-content/themes/cherry/assets/fonts/RamaGothicM.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+
+/* == MISC == */
+
+section {
+    padding: 80px 0;
+}
+
+h3.block-title {
+    color: #ff4eb6;
+    text-transform: uppercase;
+    font-family: 'Monument Extended';
+    font-size: 55px;
+}
+
+h3.block-title span {
+    font-family: 'Druk Cyr';
+    margin-left: -15px;
+    margin-right: -15px;
+    font-size: 51px;        
+}
+
+h4.block-title {
+    color: #000;
+    text-transform: uppercase;
+    font-family: 'Monument Extended';
+    font-size: 42px;
+    padding-top: 30px;
+}
+
+h4.block-title span {
+    font-family: 'Druk Cyr';
+    margin-left: -7px;
+    margin-right: -7px;
+    font-size: 40px;        
+}
+
+/* == BUTTONS == */
+
+button {
+    font-family: 'Druk Cyr';
+    text-transform: uppercase;
+}
+
+.btn.btn-3d {
+    font-size: 24px;
+    letter-spacing: 1px;
+}
+
+.btn-3d, .btn-3d:hover {
+    text-decoration: none;
+    color: #ff4eb6;
+    background: #f9f284;
+    border: 0;
+    padding: 0.25em 0.75em;
+    -moz-box-shadow: 1px 1px 0px 0px, 2px 2px 0px 0px, 3px 3px 0px 0px, 4px 4px 0px 0px, 5px 5px 0px 0px;
+    -webkit-box-shadow: 1px 1px 0px 0px, 2px 2px 0px 0px, 3px 3px 0px 0px, 4px 4px 0px 0px, 5px 5px 0px 0px;
+    box-shadow: 1px 1px 0px 0px, 2px 2px 0px 0px, 3px 3px 0px 0px, 4px 4px 0px 0px, 5px 5px 0px 0px;
+    position: relative;
+    margin: 0 20px;
+    border-radius: 0;
+    transition-duration: 0.5s;
+    top: 0;
+}
+
+.btn-3d:active, .btn-3d:focus {
+    -moz-box-shadow: 0px 0px 0px 0px;
+    -webkit-box-shadow: 0px 0px 0px 0px;
+    box-shadow: 0px 0px 0px 0px;
+    top: 5px;
+    left: 5px;
+}
+
+.show-btn {
+    text-align: center;
+}
+
+.btn-1.btn-3d, .btn-1.btn-3d:hover {
+    color: #6931c0;
+    background: #e9fe6f;
+    font-size: 32px;
+    padding-right: 30px;
+    padding-left: 30px;
+}
+
+/* == NAVBAR == */
+
+.navbar-dark .navbar-nav .nav-link {
+    color: #fff;
+    opacity: 1;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+
+.navbar {
+    background: #ec5cb3;
+    background-size: 100% 100%;
+}
+
+.navbar .container {
+    margin-top: -20px;
+}
+
+.logo-nav {
+    height: 100px;
+    position: relative;
+    top: 20px;
+}
+
+.navbar-toggler[aria-expanded=true] .navbar-toggler-icon .closed-icon {
+    display: none;
+}
+
+.navbar-toggler[aria-expanded=false] .navbar-toggler-icon .open-icon {
+    display: none;
+}
+
+.navbar-toggler .navbar-toggler-icon .closed-icon:before, .navbar-toggler .navbar-toggler-icon .open-icon:before {
+    font-size: 30px;
+}
+
+.fa-bars:before {
+    content: "\f0c9";
+}
+
+.navbar .navbar-toggler {
+    border:0;
+
+}
+
+.navbar .navbar-toggler-icon {
+    background-image: none;
+}
+
+.navbar {
+    -webkit-transform: skewY( -2deg);
+    -moz-transform: skewY(-2deg);
+    -ms-transform: skewY(-2deg);
+    -o-transform: skewY(-2deg);
+    transform: skewY( -2deg); 
+    transition-duration: 0.5s;       
+}
+
+.fixed-top {
+    top: -52px;
+    transition-duration: 0.5s;
+}
+
+.navbar .container {
+    -webkit-transform: skewY(2deg);
+    -moz-transform: skewY(2deg);
+    -ms-transform: skewY(2deg);
+    -o-transform: skewY(2deg);
+    transform: skewY( 2deg);
+    position: relative;
+    top: 32px; 
+    margin-top: 0;       
+}
+
+.logo-nav {
+    height: 130px !important;
+    max-width: initial !important;
+}
+
+.navbar-dark .navbar-nav .nav-link {
+    color: #fff;
+    opacity: 1;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    font-size: 18px;
+    font-weight: bold;
+    letter-spacing: 0;
+    padding: 25px 20px;
+    line-height: 0;
+    margin-top: 0;
+}
+
+.navbar-dark .navbar-nav .nav-link:hover {
+    background: #6931c0;
+    color: #FFF;
+}
+
+#navbarResponsive {
+    -webkit-transform: skewY( -2deg);
+    -moz-transform: skewY(-2deg);
+    -ms-transform: skewY(-2deg);
+    -o-transform: skewY(-2deg);
+    transform: skewY( -2deg);                
+}
+
+.nav-link.buy_tickets {
+    background: #f2fb61;
+    color: #6931c0 !important;        
+}
+
+.nav-link.buy_tickets:hover {
+    color: #FFF !important;        
+}
+
+.fixed-top, .logo-nav, .fixed-top.scroll-header .logo-nav, .fixed-top.scroll-header .nav-link, .fixed-top .nav-link {
+    transition-duration: 0.5s;
+}
+
+.fixed-top.scroll-header .logo-nav {
+    height: 100px;
+}
+
+.fixed-top.scroll-header .nav-link {
+    padding: 15px 15px; 
+    font-size: 16px;       
+}
+
+.fixed-top.scroll-header, .fixed-top.scroll-header .container, .fixed-top.scroll-header #navbarResponsive {
+    -webkit-transform: skewY(0deg) !important;
+    -moz-transform: skewY(0deg) !important;
+    -ms-transform: skewY(0deg) !important;
+    -o-transform: skewY(0deg) !important;
+    transform: skewY(0deg) !important;
+    transition-duration: 0.5s; 
+}
+
+.fixed-top.scroll-header, .fixed-top.scroll-header .container {
+    top: 0;
+    padding: 10px 0;
+    transition-duration: 0.5s;
+}
+
+.fixed-top.scroll-header .logo-nav {
+    top: 0;
+    height: 80px !important;
+    position: absolute;
+    transition-duration: 0.5s;
+}
+
+.tribe-link-view-attendee {
+    background: #ec5cb3;
+    padding: 20px;
+    text-align: center;
+    margin: 30px 0;
+    color: #FFF;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    font-size: 16px;    
+}
+
+.tribe-link-view-attendee a {
+    color: #6931c0;
+}
+
+/* == HERO == */
+
+.hero {
+    position: relative;
+    height: 80vh;
+}
+
+.hero:before {
+    background-position: center;
+    background-size: cover;
+    content: "";
+    position: absolute;
+    top: 0; left: 0;
+    width: 100%; height: 100%;
+    filter: grayscale(100%);
+}
+
+.hero h1 {
+    font-family: 'Druk Cyr';
+    font-size: 18vh;
+    line-height: 14.75vh;
+    color: #ff4eb6;
+    text-transform: uppercase;
+    margin-top: -60px;
+}
+
+.hero h1 span {
+    position: relative;
+}
+
+.hero h1 span:after {
+    content: "";
+    position: absolute;
+    background-image: url(/wp-content/themes/cherry/assets/images/cherry.svg);
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    background-position: center center;
+    width: 80px;
+    height: 80px;
+    top: 0;
+    bottom: 0;
+    margin: auto 0 auto 20px;
+    animation: pulse; /* referring directly to the animation's @keyframe declaration */
+    animation-duration: 2s; /* don't forget to set a duration! */
+    animation-iteration-count: infinite;
+}
+
+.hero-content {
+    padding-top: 100px;
+}
+
+.hero-overlay {
+    background: url(/wp-content/themes/cherry/assets/images/diaganol.png);
+    position: absolute;
+    width: 100%;
+    height: 80vh;
+    top: 0;
+    min-height: 600px;
+}
+
+.hero {
+    position: relative;
+    background-color: black;
+    height: 80vh;
+    width: 100%;
+    overflow: hidden;
+    min-height: 600px;
+}
+
+.hero video {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    min-width: 100%;
+    min-height: 95vh;
+    width: auto;
+    height: auto;
+    z-index: 0;
+    -ms-transform: translateX(-50%) translateY(-50%);
+    -moz-transform: translateX(-50%) translateY(-50%);
+    -webkit-transform: translateX(-50%) translateY(-50%);
+    transform: translateX(-50%) translateY(-50%);
+    filter: grayscale(85%);
+}
+
+.hero {
+    -webkit-transform: skewY(-2deg);
+    -moz-transform: skewY(-2deg);
+    -ms-transform: skewY(-2deg);
+    -o-transform: skewY(-2deg);
+    transform: skewY(-2deg);        
+}
+
+.hero-content {
+    -webkit-transform: skewY(2deg);
+    -moz-transform: skewY(2deg);
+    -ms-transform: skewY(2deg);
+    -o-transform: skewY(2deg);
+    transform: skewY(2deg);        
+}
+
+.hero-content.single-post {
+    -webkit-transform: skewY(0);
+    -moz-transform: skewY(0);
+    -ms-transform: skewY(0);
+    -o-transform: skewY(0);
+    transform: skewY(0);        
+}
+
+.hero:before {
+    content: none;
+}
+
+.hero.inner-page:before {
+    content: "";
+}
+
+.hero-slide {
+    position: absolute;
+    top: 0;
+    z-index: 2;
+}
+
+.hero-overlay, .hero-content {
+    z-index: 3;
+}
+
+.carousel-control-prev, .carousel-control-next {
+    z-index: 4;
+    position: relative;
+}
+
+.slides[data-slides] {
+    background-image: url(/wp-content/themes/cherry/assets/images/background/header-bg-1.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    transition: background 1s linear;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+}
+
+/* == NEXT SHOW == */
+
+.next-show .show-poster {
+    width: 100%;
+    border: 2px solid #ececec;
+    margin-top: -120px;
+    height: auto;
+}
+
+.poster-box:hover .show-poster {
+    border-color: #48469a;
+}
+
+.next-show h2 {
+    color: #6931c0;
+    text-transform: uppercase;
+    font-family: 'Druk Cyr';
+    font-size: 100px;
+    line-height: 84px;
+    margin-bottom: 20px;
+}
+
+.next-show h2.tag {
+    font-family: 'Monument Extended';
+    font-size: 24px;
+    line-height: 24px;
+    margin-bottom: 10px;
+    position: relative;
+    z-index: 2;
+}
+
+.next-show h2.tag-lower {
+    font-family: 'Monument Extended';
+    font-size: 28px;
+    line-height: 28px;
+}
+
+.next-show {
+    padding: 40px 0;
+}
+
+.next-show p {
+    line-height: 32px;
+}
+
+.next-show p span {
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+
+.ticket-block img {
+    width: 100%;
+}
+
+.tribe-tickets__tickets-form {
+    max-width: 100% !important;
+}
+
+/* == SHOW LIST == */
+
+.single-show-list {
+    padding: 20px;
+    cursor: pointer;
+}
+
+.single-show-list:hover {
+    background: #6931c0;
+    color: #fff;
+    border-color: #6931c0;
+}
+
+.single-show-list .show-date {
+    text-transform: uppercase;
+    font-family: 'Monument Extended';
+    font-size: 44px;
+    text-align: center;             
+}
+
+.single-show-list .show-date span {
+    font-family: 'Druk Cyr';                
+}
+
+.single-show-list .show-title {
+    font-family: 'Druk Cyr';
+    text-transform: uppercase;
+    font-size: 36px;
+    line-height: 32px;
+}
+
+.single-show-list .show-logo {
+    text-align: center;
+}
+
+.single-show-list .show-logo img {
+    vertical-align: text-top;
+    height: 100%;
+}
+
+/* == WHELANS == */
+
+.whelans .whelans-pic img {
+    width: 100%;
+    padding-right: 60px;
+}
+
+.whelans h4 {
+    color: #48469a;
+    font-family: 'Druk Cyr';
+    text-transform: uppercase;
+    font-size: 120px;
+}
+
+.whelans {
+    font-size: 22px;
+    position: relative;
+}
+
+.whelans-info {
+    padding-right: 140px;
+}
+
+.whelans ul {
+    list-style-type:none;
+    margin-block-start:0;
+    margin-block-end:0;
+    margin-inline-start:0;
+    margin-inline-end:0;
+    padding-inline-start:0;             
+}
+
+.whelans ul li {
+    list-style: none;
+}
+
+.whelans .whelans-bg {
+    position: relative;
+    top: -200px;
+    z-index: -1;
+    width: 100%;
+    margin-bottom: -200px;            
+}
+
+.whelans .address a {
+    color: #000;
+}
+
+.whelans .address a:hover {
+    color: #6931c0;
+}
+
+.whelans .links i {
+    color: #000;
+    font-size: 38px;
+    margin-right: 10px;
+    margin-top: 40px;
+}
+
+.whelans .links i:hover {
+    color: #6931c0;
+}
+
+/* == LATEST NEWS == */
+
+.news-content h1 {
+    font-family: 'Druk Cyr';    
+    display: block;
+    width: 100%;
+    text-transform: uppercase;
+    font-size: 44px;
+    font-size: 80px;
+    text-align: center;
+}
+
+.news-content .tagline {
+    width: 100%;
+    text-align: center;
+    font-size: 20px;
+    font-style: italic;
+    margin-bottom: 60px;                    
+}
+
+.news-content img {
+    margin-bottom: 30px;
+}
+
+.questions_10 p.question {
+    margin-bottom: 5px;
+}
+
+.questions_10 p.answer {
+    margin-bottom: 20px;
+}
+
+
+.latest-news-single {
+    margin-bottom: 30px;
+}
+
+.latest-news-single .latest-news-img img {
+    width: 100%;
+}
+
+.latest-news-single .latest-news-meta h5 {
+    text-transform: uppercase;
+    font-family: 'Druk Cyr';
+    font-size: 32px;
+    letter-spacing: 0.5px;
+    line-height: 32px;
+    padding: 10px 0 0;
+    color: #48469a;
+}
+
+.latest-news-meta .latest-news-time {
+    color: #828282;
+    font-size: 14px;
+}
+
+.latest-news a:hover {
+    text-decoration: none;
+}
+
+.latest-news a .latest-news-img {
+    border: 2px solid #FFF;
+    transition-duration: 0.5s;
+}
+
+.latest-news a:hover .latest-news-img {
+    border: 2px solid #f2fb61;
+    transition-duration: 0.5s;
+}
+
+.latest-news a .latest-news-meta h5 {
+    transition-duration: 0.5s;
+}
+
+.latest-news a:hover .latest-news-meta h5 {
+    transition-duration: 0.5s;
+}
+
+.view-news-btn {
+    margin-top: 50px;
+}
+
+.latest-news h4 {
+    color: #6931c0;
+    text-transform: uppercase;
+    font-family: 'Monument Extended';
+    font-size: 55px;
+    padding-bottom: 30px;
+}
+
+.latest-news h4 span {
+    font-family: 'Druk Cyr';
+    margin-left: -15px;
+    margin-right: -15px;
+    font-size: 51px;        
+}
+
+.pic-grid img {
+    width: 100%;
+    height: auto;
+}
+
+/* == TICKETS == */
+
+.entry .entry-content .event-tickets .tribe-tickets__attendee__fields__footer_checkout-button.tribe-common-c-btn, .entry .entry-content .event-tickets .tribe-tickets__tickets-buy.tribe-common-c-btn, .event-tickets .tribe-tickets__attendee__fields__footer_checkout-button.tribe-common-c-btn, .event-tickets .tribe-tickets__tickets-buy.tribe-common-c-btn {
+    background-color: #6931c0;
+    cursor: not-allowed;
+    border-radius: 0;
+}
+
+.event-tickets .tribe-tickets__tickets-buy.tribe-common-c-btn:disabled {
+    background-color: #ffd7ef !important;
+}
+
+.event-tickets .tribe-tickets__tickets-buy.tribe-common-c-btn {
+    cursor: pointer !important;
+    border-radius: 0;
+}
+
+.tribe-common button.tribe-common-c-btn--small {
+    background-color: #6931c0 !important;
+    cursor: not-allowed;
+    border-radius: 0;   
+}
+
+.event-tickets .tribe-tickets__tickets-buy.tribe-common-c-btn:hover {
+    background-color: #48469a !important;
+}
+
+.event-tickets .tribe-dialog__wrapper.tribe-modal__wrapper--ar .tribe-modal--ar__title, .event-tickets h2.tribe-common-h4 {
+    font-family: inherit;
+    text-transform: uppercase;
+    font-size: 22px;
+    font-weight: bold;
+    letter-spacing: inherit;
+    padding: 10px 0;
+}
+
+.tribe-common button.tribe-common-c-btn-link {
+    background-color: transparent !important;
+    color: #000 !important;
+    text-decoration: none !important;
+    font-weight: 600 !important;
+}
+
+.tribe-common button.tribe-common-c-btn-link:hover {
+    color: #6931c0 !important;
+    text-decoration: underline !important;
+}
+
+/* == EVENT BLOCKS == */
+
+.view-event {
+    background: #6931c0;
+    color: #e9fe6f;
+    padding: 10px 0;
+    text-transform: uppercase;
+    font-family: 'Monument Extended';
+    font-size: 24;
+    width: 100%;   
+    letter-spacing: 0.5px;                            
+}
+
+.poster-box:hover .view-event {
+    text-decoration: none;
+    background: #48469a;
+    color: #90fad3;
+}
+
+.next-show.event-page .poster-box:hover img {
+    border: 2px solid #ececec;
+}
+
+.single-show-list .show-logo svg {
+    width: 100%;
+    height: auto;
+    padding: 0 50px;
+}
+
+.single-show-list:hover .show-logo svg path {
+    fill: #fff !important;
+}
+
+.show-info {
+    padding: 30px 0 0;
+}
+
+.show-info i {
+    margin-right: 15px;
+    opacity: 0.5;
+    width: 20px;
+}
+
+.show-info div:first-child {
+    padding-right: 50px;
+}
+
+.next-show.event-page .tag-lower {
+    margin-bottom: 0;
+}
+
+.line-up-tag {
+    font-size: 18px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    margin: 10px 0 20px;
+    background: #e9fe6f;
+    color: #6931c0;
+    padding: 5px 20px;
+    width: fit-content;
+}
+
+.line-up-tag:hover {
+    background: #6931c0;
+    color: #e9fe6f;             
+    text-decoration: none;
+}
+
+.performers .pf-com::after {
+    content: ", ";
+}
+
+.performers .pf-com:nth-last-child(2)::after {
+    content: " & ";
+}
+
+.performers .pf-com:last-child::after {
+    content: "";
+    display: none;
+}
+
+.performers .pf-com {
+    font-family: 'Monument Extended';
+    font-size: 36px;
+    padding: 0;
+}
+
+.performers .pf-com a {
+    color: #212529;
+    transition-duration: 0.5s;
+}
+
+.performers .pf-com a:hover {
+    color: #ec5cb3;
+    transition-duration: 0.5s;
+    text-decoration: none;
+}
+
+.line-up-text {
+    padding-top: 30px;
+}
+
+.headliner, .performers, .mc {
+    font-family: 'Monument Extended';
+    text-transform: uppercase;
+    font-size: 36px;
+    line-height: 36px;          
+    position: relative;
+    z-index: 3;
+    font-size: ;    
+}
+
+.headliner span, .mc span, .performers span {
+    font-family: 'Druk Cyr';
+    font-size: 34px;
+    padding: 0 10px;
+}
+
+.headliner, .performers, .mc {
+    display: block;
+    width: 100%;
+    text-align: center;
+}
+
+
+.quotes::before {
+    font-family: "Font Awesome 5 Free";
+    font-weight: 900;
+    content: "\f10d";
+    position: absolute;
+    right: 0;
+    left: 0;
+    margin: 0 auto;
+    font-size: 66px;
+    text-align: center;
+    top: -50px;
+    color: #e9fe6f;
+    z-index: 2;
+}
+
+.event-reviews .single-quote {
+    position: relative;
+}
+
+.event-reviews .single-quote:before {
+    content: f10d;
+    font-family: 'Font Awesome';
+    position: absolute;
+    left: 0;
+    top: 0;
+}
+
+.single-quote .review {
+    font-size: 28px;
+    font-family: 'Futura PT';
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    line-height: 29px;
+    text-align: center; 
+    position: relative;
+    z-index: 3;         
+}
+
+.single-quote .reviewer {
+    text-align: center;
+    font-family: 'Druk Cyr';
+    text-transform: uppercase;
+    font-size: 46px;            
+    position: relative;
+    z-index: 3;         
+}
+
+.show-logo img {
+    width: 100%;
+    padding: 0 50px;
+}
+
+.cherry-color-box {
+    cursor: pointer;
+}
+
+.cherry-color-box.no-profile {
+    cursor: initial;
+}
+
+.cherry-color-box .hover-img img {
+    width: 100%;
+    height: auto;
+}
+
+.hover-img img {
+    /*border:1px solid #ddd;
+    margin-bottom: 30px;*/
+}
+
+.cherry-color-box .hover-img {
+    position: relative;
+}
+
+.cherry-color-box:hover .overlay-hover {
+    background: #48469A;
+    position: absolute;
+    visibility: visible;
+    width: 100%;
+    height: 100%;
+    mix-blend-mode: color;
+}
+
+.cherry-color-box .comic-name {
+    position: absolute;
+    bottom: -1px;
+    width: 100%;
+    background: rgb(105,49,192);
+    background: linear-gradient(0deg, rgba(105,49,192,1) 0%, rgba(105,49,192,0) 100%);
+    padding: 5px 0 20px;
+    text-align: center;
+    color: #90fAD3;
+    text-transform: uppercase;
+    font-size: 32px;
+    font-family: 'Druk Cyr';
+    letter-spacing: 1px;
+    line-height: 30px;
+}
+
+.cherry-color-box:nth-child(5n+1):hover .overlay-hover {
+    background: #7154b1;
+}
+
+.cherry-color-box:nth-child(5n+1) .comic-name {
+    background: rgb(113,84,177);
+    background: linear-gradient(0deg, rgba(113,84,177,1) 0%, rgba(113,84,177,0) 100%);
+    color: #ef8ff8;
+}
+
+.cherry-color-box:nth-child(5n+2):hover .overlay-hover {
+    background: #ff4eb6;
+}
+
+.cherry-color-box:nth-child(5n+2) .comic-name {
+    background: rgb(105,49,192);
+    background: linear-gradient(0deg, rgba(105,49,192,1) 0%, rgba(105,49,192,0) 100%);
+    color: #f9f284;
+}
+
+.cherry-color-box:nth-child(5n+3):hover .overlay-hover {
+    background: #6931c0;
+}
+
+.cherry-color-box:nth-child(5n+3) .comic-name {
+    background: rgb(255,78,182);
+    background: linear-gradient(0deg, rgba(255,78,182,1) 0%, rgba(255,78,182,0) 100%);
+    color: #e9fe6f;
+}
+
+.cherry-color-box:nth-child(5n+4):hover .overlay-hover {
+    background: #48469a;
+}
+
+.cherry-color-box:nth-child(5n+4) .comic-name {
+    background: rgb(72,70,154);
+    background: linear-gradient(0deg, rgba(72,70,154,1) 0%, rgba(72,70,154,0) 100%);
+    color: #90fad3;
+}
+
+.cherry-color-box:nth-child(5n+5):hover .overlay-hover {
+    background: #ff5c1c;
+}
+
+.cherry-color-box:nth-child(5n+5) .comic-name {
+    background: rgb(255,92,28);
+    background: linear-gradient(0deg, rgba(255,92,28,1) 0%, rgba(255,92,28,0) 100%);
+    color: #ffe822;
+}
+
+.not-comic-btn {
+    margin-top: 50px;
+}
+
+.btn.loadMoreBtn {
+    font-size: 32px;
+    padding-right: 30px;
+    padding-left: 30px;
+    text-decoration: none;
+    color: #6931c0;
+    background: #e9fe6f;
+    border: 0;
+    padding: 0.25em 1.25em;
+    -moz-box-shadow: 1px 1px 0px 0px, 2px 2px 0px 0px, 3px 3px 0px 0px, 4px 4px 0px 0px, 5px 5px 0px 0px;
+    -webkit-box-shadow: 1px 1px 0px 0px, 2px 2px 0px 0px, 3px 3px 0px 0px, 4px 4px 0px 0px, 5px 5px 0px 0px;
+    box-shadow: 1px 1px 0px 0px, 2px 2px 0px 0px, 3px 3px 0px 0px, 4px 4px 0px 0px, 5px 5px 0px 0px;
+    position: relative;
+    margin: 0 20px;
+    border-radius: 0;
+    font-family: 'Druk Cyr';
+    text-transform: uppercase;
+    margin-top: 50px;
+}
+
+.btn.loadMoreBtn:focus {
+    -moz-box-shadow: 0px 0px 0px 0px;
+    -webkit-box-shadow: 0px 0px 0px 0px;
+    box-shadow: 0px 0px 0px 0px;
+    top: 5px;
+    left: 5px;
+}     
+
+a .single-show-list {
+    color: #000;
+}
+
+a:hover {
+    text-decoration: none;
+    color: #FFF;
+}
+
+.home-line-up {
+    padding: 0;
+}
+
+.home-line-up .cherry-color-box .comic-name {
+    font-size: 26px;
+    line-height: 28px;
+}
+
+.event-list .cherry-color-box img {
+    border: 2px solid #ececec;
+    margin-bottom: 30px;
+}
+
+.event-line-up.upcoming {
+    padding-bottom: 0;
+}
+
+
+/* == INNER PAGE == */
+
+.inner-page .hero-overlay {
+    height: 500px;
+}
+
+.inner-page.hero {
+    height: 500px;
+}
+
+.inner-page.hero:before {
+    top: 60px;
+}    
+
+.inner-page.hero h1 {
+    color: #6931c0;
+    text-transform: uppercase;
+    font-family: 'Monument Extended';
+    font-size: 55px;
+    margin: 0;
+    padding-top: 80px;
+    line-height: 55px;
+}
+
+.inner-page.hero h1 span {
+    font-family: 'Druk Cyr';
+    margin-left: -15px;
+    margin-right: -15px;
+    font-size: 51px;        
+}
+
+.inner-page-content {
+    -webkit-transform: skewY(2deg);
+    -moz-transform: skewY(2deg);
+    -ms-transform: skewY(2deg);
+    -o-transform: skewY(2deg);
+    transform: skewY( 2deg);
+    z-index: 9;
+    position: relative;    
+}
+
+.inner-page .hero-content {
+    z-index: 6;
+}
+
+.inner-page .hero-content h1 {
+    color: #FFF;       
+}
+
+/* == COMEDIAN LIST == */
+
+.not-single-comic {
+    width: 100%;
+    justify-content: center;
+    margin-top: 50px;  
+}
+
+/* == SINGLE COMEDIAN == */
+
+p.breakout {
+    font-size: 22px;
+}
+
+p.breakout.winner {
+    font-size: 26px;
+}
+
+.social-profile i {
+    font-size: 32px;
+    top: 5px;
+    color: #ff4eb6;
+    background: transparent;
+    width: 100%;
+    text-align: center;
+    padding-bottom: 42.18px;
+}
+
+.social-profile i:before {
+    top: 20px;
+    position: relative;
+}
+
+.social-profile a:hover i {
+    background: #ec5cb3;
+    color: #2e2e2e;
+}
+
+.social-profile i.fa-facebook-f {
+    background: #3b5998;
+    color: #fff;
+}
+
+
+.social-profile i.fa-instagram {
+    background: linear-gradient(45deg, #405de6, #5851db, #833ab4, #c13584, #e1306c, #fd1d1d);
+    color: #fff;
+}
+
+
+.social-profile i.fa-twitter {
+    background: #1DA1F2;
+    color: #fff;
+}
+
+
+.social-profile i.fa-youtube {
+    background: #c4302b;
+    color: #fff;
+}
+
+
+.social-profile i.fa-tiktok {
+    background: #69c9D0;
+    color: #fff;
+}
+
+
+.social-profile i.fa-desktop {
+    background: #3b5998;
+    color: #fff;
+}
+
+.comic-quotes p {
+    position: relative;
+    z-index: 3;
+    margin-bottom: 5px;
+    font-style: italic;
+}
+
+.comic-quotes {
+    margin-top: 60px;
+    padding-left: 0;
+    padding-right: 0;
+}
+
+.comic-quotes .quotes::before {
+    text-align: left;
+}         
+
+#upcoming-shows {
+    padding-bottom: 60px;
+}         
+
+.video-frame {
+    background: #000;
+}
+
+.more-shows.show-list {
+    padding: 120px 0;
+} 
+
+/* == COMIC VIDEO == */
+
+.comic-video {
+    padding-bottom: 0;
+}
+
+/* == FOOTER == */
+
+footer {
+    padding: 60px 0;
+    background: #6931c0;
+    color: #fff;
+}
+
+footer .logo {
+    height: 200px;
+    padding-bottom: 30px;
+}
+
+footer .logo {
+    height: 200px;
+    padding-bottom: 30px;
+}
+
+.footer-logo img {
+    width: 146px;
+    height: auto;
+    margin-bottom: 30px;
+}
+
+.footer-ws img {
+    max-width: 100%;
+    width: 180px;
+    margin-bottom: 30px;
+}
+
+footer .footer-text h5 {
+    color: #f9f284;
+    text-transform: uppercase;
+    font-family: 'Druk Cyr';
+    letter-spacing: 1px;
+    font-size: 38px;
+}
+
+footer .right-footer {
+    text-align: right;
+}
+
+footer .footer-text {
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+footer .footer-text a {
+    color: #fff;
+}
+
+footer .footer-text a:hover {
+    color: #fff;
+    text-decoration: underline;
+}
+
+.social-block i {
+    background: transparent;
+    height: 50px;
+    width: 50px;
+    text-align: center;
+}
+
+.social-block i {
+    font-size: 32px;
+    margin-left: 10px;
+    top: 5px;
+    color: #000;
+}
+
+.social-block.footer-socials i {
+    color: #ff4eb6;
+}
+
+.social-block i.fa-facebook-f:hover {
+    background: #3b5998;
+    color: #fff;
+}
+
+.social-block i.fa-whatsapp:hover {
+    background: #25D366;
+    color: #fff;
+}
+
+.social-block i.fa-instagram:hover {
+    background: linear-gradient(45deg, #405de6, #5851db, #833ab4, #c13584, #e1306c, #fd1d1d);
+    color: #fff;
+}
+
+.social-block i.fa-twitter:hover {
+    background: #1DA1F2;
+    color: #fff;
+}
+
+.social-block i.fa-youtube:hover {
+    background: #c4302b;
+    color: #fff;
+}
+
+.social-block i:before {
+    top: 8px;
+    position: relative;             
+}
+
+/* == NEWS == */
+
+.latest-news-img {
+    width: 100%;
+}
+
+.latest-news-single {
+    justify-content: center;
+}
+
+#news-posts {
+    text-align: center;
+}
+
+.latest-news-meta {
+    text-align: left;
+}
+
+/* == CHERRY SHARE == */
+
+.share-inner {
+    position: relative;
+    text-align: center;
+}
+
+.cherry-share {
+    padding: 30px 0;
+    margin: 0 auto; 
+}
+
+.background {
+    padding-bottom: 16.172106824925816%;
+    width: 100%;
+    position: relative;
+    background-image: url(/wp-content/themes/cherry/assets/images/share/background.svg);
+    mask-image: url(/wp-content/themes/cherry/assets/images/share/background.svg);
+    -webkit-mask-size: 100%;
+    mask-size: 100%;
+    -webkit-mask-repeat: no-repeat;
+    mask-repeat: no-repeat;
+    -webkit-mask-position: center;
+    mask-position: center;
+    background-size: 100% 100%;
+}
+
+.cherrycomedy {
+    position: absolute;
+    width: 44.58456973293769%;
+    right: 7.047477744807122%;
+    top: 0;
+    bottom: 0;
+    margin: auto;
+    z-index: 3;
+}
+
+.icon {
+    width: 7.937685459940654%;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    margin: auto;
+    left: 7.047477744807122%;
+    z-index: 5;
+}
+
+.ig {
+    left: 16.765578635014837%;
+}
+
+.tw {
+    left: 36.053412462908014%;
+}
+
+.fb {
+    left: 26.409495548961427%;
+}
+
+.share-review {
+    width: 18.026706231454007%;
+    position: absolute;
+    left: 2.744807121661721%;
+    bottom: -9%;
+}
+
+.share-pics {
+    width: 12.685459940652818%;
+    position: absolute;
+    left: 13.798219584569733%;
+    top: -8%;
+}
+
+.share-like {
+    width: 13.056379821958458%;
+    position: absolute;
+    left: 24.851632047477747%;
+    bottom: -9%;
+}
+
+.share-tweet {
+    width: 16.988130563798222%;
+    position: absolute;
+    left: 31.824925816023743%;
+    top: -7%;
+}
+
+.share-tweet { transition-duration: 0.2s; z-index: 3;}
+.twit:hover .share-tweet { top: -9%; transition-duration: 0.2s; }
+
+.share-like { transition-duration: 0.2s; z-index: 3;}
+.face:hover .share-like { bottom: -11%; transition-duration: 0.2s; }
+
+.share-pics { transition-duration: 0.2s; z-index: 3;}
+.insta:hover .share-pics { top: -10%; transition-duration: 0.2s; }
+
+.share-review { transition-duration: 0.2s; z-index: 3;}
+.trip:hover .share-review { bottom: -11%; transition-duration: 0.2s; }
+
+/* == COMIC GALLERY == */
+
+.comic-gallery {
+    padding-top: 60px;
+}
+
+.single-img img {
+    width: 100%;
+    height: auto;
+}
+
+/* == ON THIS DAY == */
+
+.on-this-day .container {
+    background: url(/wp-content/uploads/2021/10/otd-bg.png);
+    background-size: cover;
+}
+
+.otd-title {
+    position: relative;
+}
+
+.otd-title h2 {
+    font-family: 'Rama Gothic M';
+    text-transform: uppercase;
+    text-align: center;
+    font-size: 6em;
+    position: relative;
+    z-index: 4;            
+}
+
+.otd-bg-text {
+    position: absolute;
+    top: -94px;
+    left: 0;
+    right: 0;
+    text-align: center;
+    font-family: 'Rama Gothic M';
+    text-transform: uppercase;
+    font-size: 10em;
+    color: transparent;
+    -webkit-text-stroke-width: 1px;
+    -webkit-text-stroke-color: #ff78d4;
+    z-index: 2;
+    -webkit-background-clip: text;            
+}
+
+.otd-gradient {
+    position: absolute;
+    top: -94px;
+    width: 100%;
+    z-index: 3;
+    height: 200px;
+    background: rgb(255,255,255);
+    background: linear-gradient(0deg, rgba(255,255,255,1) 0%, rgba(255,255,255,0) 100%);            
+}
+
+.otd-year {
+    background: #6931c0;
+    color: #FFF;
+    font-weight: bold;
+    font-size: 32px;
+    width: fit-content;
+    max-width: fit-content;
+    margin: 0 auto;
+    -webkit-transform: skewY(-2deg);
+    -moz-transform: skewY(-2deg);
+    -ms-transform: skewY(-2deg);
+    -o-transform: skewY(-2deg);
+    transform: skewY(-2deg);
+    z-index: 9;
+    position: relative;
+    top: 12px; 
+    padding: 0 20px;           
+}
+
+/* == A-Z LIST == */
+
+.az-links {
+    padding: 30px 0;
+    text-align: center;
+}
+
+.letter-link {
+    color: #6931c0;
+    font-size: 22px;
+    padding: 5px;                   
+}
+
+.letter-link:hover {
+    text-decoration: underline;
+    color: #6931c0;
+}
+
+span.letter-link {
+    color: #000;
+    opacity: 0.1;                   
+}
+
+span.letter-link:hover {
+    background: initial;
+    color: #000;
+    opacity: 0.1;
+    text-decoration: none;
+}
+
+#az-slider {
+    display: none;
+}
+
+.az-links {
+    text-align: center;
+    font-weight: bold;
+}
+
+.az-links li {
+    display: inline-block;
+    list-style: none;
+    padding: 0 10px;
+}
+
+.az-links li.no-posts {
+    opacity: 0.1;
+    font-weight: normal;
+}
+
+.az-links li a {
+    color: #6931c0;
+}
+
+/* == NEWS POSTS == */
+
+.news-content h1, .news-content .tagline {
+    font-style: initial;
+}
+
+.news-content {
+    margin: 50px 0;
+    font-style: italic;
+    font-size: 22px;
+    line-height: 34px;    
+}
+
+.questions_10 {
+    font-size: 18px;
+    line-height: inherit;
+    font-style: initial;
+}
+
+.category {
+    text-transform: uppercase;
+    letter-spacing: 4px;
+    font-weight: bold;
+    font-style: normal;
+    text-align: center;
+    margin: 20px 0;
+}
+
+.news-content img {
+    width: 100%;
+    height: auto;
+}
+
+.category a {
+    color: #FFF;
+}
+
+.category a:hover {
+    text-decoration: none;
+}
+
+.news-content a {
+    color: #6931c0;
+}
+
+.news-content a:hover {
+    text-decoration: underline;
+}
+
+.in-this-article {
+    border: 2px solid #000;
+    height: 260px;
+    position: relative;
+}
+
+.ita-title {
+    background: #6931c0;
+    color: #FFF;
+    width: fit-content;
+    padding: 5px 20px;
+    font-family: 'Druk Cyr';
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    position: absolute;
+    top: -19px;
+    right: 20.75%;
+    margin: 0 auto;
+}
+
+.ita-comic .ita-title {
+    top: -19px;
+    right: 12.5%;
+    left: initial;
+}
+
+.ita-poster {
+    width: auto;
+    height: 256px;
+}
+
+.in-this-article h3.event-title {
+    text-transform: uppercase;
+    font-family: 'Monument Extended';
+    font-size: 44px;
+    text-align: center;
+}
+
+.ita-comic h3.event-title {
+    font-size: 32px;
+    line-height: 32px;
+}
+
+.in-this-article h3.event-title span {
+    font-family: 'Druk Cyr';                                
+}
+
+.in-this-article .days-away {
+    font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: 0px;
+    margin: 0;                      
+}
+
+.comedian-feature {
+    padding: 50px;
+    height: 250px;
+    width: 100%;
+    border: 2px solid #000;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.comedian-feature img {
+    width: 100%;
+    height: auto;                               
+}
+
+a .in-this-article h3.event-title, a .in-this-article .days-away {
+    color: #000;
+}
+
+a .in-this-article h3.event-title:hover, a .in-this-article .days-away:hover {
+    text-decoration: none;
+}
+
+
+/* == BUY TICKETS == */
+
+.single-ticket-event {
+    margin-bottom: 60px;
+}
+
+.single-ticket-event h2 {
+    text-transform: uppercase;
+    font-weight: bold;
+    letter-spacing: 2px;
+    font-size: 28px;
+    margin: 0;
+}
+
+.single-ticket-event .poster-box img {
+    width: 100%;
+    height: auto;
+    padding-top: 25px;
+}
+
+
+/* == CONTACT == */
+
+.contact-box {
+    background: #f9f9f9;
+    text-align: center;
+    padding: 30px;
+    margin-bottom: 20px;
+    border-radius: 5px;
+}
+
+.contact-box p {
+    margin-bottom: 0;
+    font-weight: bold;
+}
+
+.contact-box h2 {
+    font-family: 'Monument Extended';
+    text-transform: uppercase;
+    font-size: 28px;                        
+}
+
+.contact-box img {
+    width: 60px;
+    margin-bottom: 10px;
+}
+
+a .contact-box {
+    color: #000;
+}
+
+.contact-box:hover {
+    background: #ededed;
+}
+
+#map {
+    height: 320px;
+    border-radius: 5px;
+}
+
+input[type="text"], input[type="email"], input[type="url"], input[type="tel"], select {
+    padding: 10px 0 !important;
+    border: 0;
+    border-bottom: 1px solid;
+    font-size: 18px !important;
+    letter-spacing: 0px; 
+    outline: 0;                       
+} 
+
+input[type="text"]:focus, input[type="email"]:focus, input[type="url"]:focus, input[type="tel"]:focus, select:focus {
+    border-color: #6931c0;
+}
+
+.contact-form option {
+    padding: 0 !important;
+}
+
+.gfield {
+    margin-bottom: 15px !important;
+}
+
+.contact-form textarea {
+    padding: 10px 0 !important;
+    border: 0;
+    border-bottom: 1px solid;
+    font-size: 18px !important;
+    letter-spacing: 0px; 
+    outline: 0;
+    resize: none;
+}
+
+.gform_wrapper.gravity-theme .gfield_label {
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+
+.gform_wrapper .gfield_required {
+    color: #6931c0;
+}
+
+.contact-form input[type="submit"] {
+    margin: 0;
+    text-transform: uppercase;
+    font-family: 'Druk Cyr';
+    font-size: 24px;
+    letter-spacing: 1px;                        
+}
+
+.gform_wrapper .gfield_error .gfield_repeater_cell label, .gform_wrapper .gfield_error label, .gform_wrapper .gfield_error legend, .gform_wrapper .gfield_validation_message, .gform_wrapper .validation_message, .gform_wrapper [aria-invalid=true]+label, .gform_wrapper label+[aria-invalid=true] {
+    color: #6931c0 !important;
+}
+
+.gform_wrapper .gfield_error [aria-invalid=true] {
+    border: 1px solid #6931c0 !important;
+    padding-left: 10px !important;
+}
+
+.gform_wrapper.gravity-theme .field_description_above .gfield_description {
+    padding-top: 15px !important;
+}
+
+.gform_wrapper .gfield_validation_message, .gform_wrapper .validation_message {
+    background: #6931c0 !important;
+    border: 1px solid #6931c0 !important;
+    margin-top: 0 !important;
+    color: #FFF !important;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+.gform_wrapper .gform_validation_errors > h2 {
+    color: #6931c0 !important;
+    text-transform: uppercase !important;
+    font-size: 16px !important;
+}
+
+.gform_wrapper .gform_validation_errors {
+    background: #faf284 !important;
+    border-radius: 0 !important;
+    border: 1.5px solid #faf284 !important;
+    box-shadow: 0 !important;
+    color: #6931c0 !important;
+}
+
+.contact-form input[type="submit"]:focus-visible {
+    outline: 0;
+}
+
+.gform-theme-datepicker:not(.gform-legacy-datepicker) .ui-datepicker-calendar .ui-state-default {
+    border-radius: 0 !important;
+}
+
+.gform-theme-datepicker:not(.gform-legacy-datepicker) td, .gform-theme-datepicker:not(.gform-legacy-datepicker) th {
+    padding: 0 !important;
+    width: 40px !important;
+    height: 40px !important;
+}
+
+.gform-theme-datepicker:not(.gform-legacy-datepicker) .ui-datepicker-header select.ui-datepicker-month {
+    -moz-text-align-last: right;
+    text-align-last: inherit !important;
+    text-transform: uppercase;
+    text-align: justify;
+}
+
+.gform-theme-datepicker:not(.gform-legacy-datepicker) .ui-datepicker-header .ui-datepicker-prev {
+    height: 100%;
+}
+
+.gform-theme-datepicker:not(.gform-legacy-datepicker) .ui-datepicker-header select {
+    padding-right: 15px !important;
+}
+
+
+/* == RESPONSIVE STYLES == */
+
+@media only screen and (max-width: 991px) {
+
+    /* == HERO == */
+
+    .inner-page.hero {
+        width: 100%;
+    }
+
+    .hero {
+        width: 100%;
+        height: 40vh;
+    }
+
+    .hero h1 {
+        text-align: center;
+        font-size: 44px;
+        line-height: 64px;
+    }
+
+    .hero h1 span {
+        font-size: 120px;
+    }
+
+    /* == NEXT SHOW == */
+
+    .next-show {
+        text-align: center;
+        padding-bottom: 0;       
+    }
+
+    .next-show .show-poster {
+        width: 75%;
+        margin-bottom: 30px;
+    }
+
+    .next-show p {
+        width: 75%;
+        margin: 0 auto;
+    }
+
+    .next-show .ticket-block {
+        padding: 30px 0 0;
+    }
+
+    /* == SHOW LIST == */
+
+    .show-list h3 {
+        font-size: 38px;
+    }
+
+    .show-list h3 span {
+        font-size: 35px;
+        margin: 0 -5px;
+    }
+
+    .single-show-list .show-date {
+        line-height: 44px;
+    }
+
+    .single-show-list .show-title {
+        padding: 20px 0;
+        text-align: center;
+    }
+
+    .single-show-list {
+        padding: 20px;
+        border: 2px solid #000;
+        max-width: 65% !important;
+        margin: 10px auto;
+    }
+
+    /* == WHELANS == */
+
+    .whelans {
+        padding-bottom: 0;
+    }
+
+    .whelans .whelans-pic {
+        text-align: center;
+    }
+
+    .whelans .whelans-pic img {
+        width: 50%;
+        padding-right: 0;
+    }
+
+    .whelans .whelans-info {
+        padding-right: 0;
+        text-align: center;
+    }
+
+    .whelans .whelans-bg {
+        top: initial;
+        margin-bottom: initial;
+    }
+
+    /* == FOOTER == */
+
+    footer .left-footer, footer .right-footer {
+        text-align: center;
+    }
+
+    footer .footer-text h5 {
+        font-size: 32px;
+    }
+
+    footer .footer-text {
+        font-size: 14px;
+    }
+}
+
+
+
+
+
+
+
+
+
+.tribe-common-c-btn {
+    cursor: pointer !important;
+}
+
+#tribe-modal__attendee-registration {
+    margin-bottom: 0;
+}
+
+.woocommerce-checkout .col2-set {
+    width: 50% !important;
+    float: left !important;
+}
+
+.woocommerce-checkout .col1-set {
+    width: 50% !important;
+    float: none !important;
+}
+
+#customer_details+#wc_checkout_add_ons,
+#order_review,
+#order_review_heading {
+    width: 50% !important;
+    float: right;
+    margin-right: 0;
+}
+
+.woocommerce-checkout {
+    margin-top: 3em;
+}
+
+.woocommerce-info {
+    border-top-color: #faf284;
+    margin-bottom: 0;
+}
+
+.woocommerce form.checkout_coupon {
+    margin: 0;
+    border: 0;
+    padding-left: 0;
+}
+
+.woocommerce button:focus {
+    outline: 0;
+}
+
+.woocommerce-error, .woocommerce-info, .woocommerce-message {
+    background-color: #6931c0;
+    color: #ffffff;
+    border-top: 3px solid #faf284;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+.woocommerce a {
+    color: #6931c0;
+}
+
+.woocommerce-info::before, .woocommerce-message::before, .woocommerce-error::before {
+    color: #faf284;
+}
+
+.woocommerce-input-wrapper {
+    width: 100%;
+}
+
+.woocommerce-billing-fields__field-wrapper {
+    padding-right: 50px;
+}
+
+.woocommerce form .form-row input.input-text, .woocommerce form .form-row textarea, .woocommerce form .form-row select, .woocommerce form .form-row input {
+    padding: 8px 0 !important;
+    border: 0;
+    border-bottom: 1px solid;
+    font-size: 18px !important;
+    letter-spacing: 0px;
+    outline: 0;
+    border-radius: 0 !important;
+    margin-bottom: 10px;
+}
+
+.form-control:focus, .form-control:active {
+    outline: 0;
+    box-shadow: none;
+}
+
+.woocommerce input:focus:focus, .woocommerce input:active {
+    border-color: #6931c0;        
+}
+
+.select2-container--default .select2-selection--single {
+    padding: 10px 0 !important;
+    border: 0;
+    border-bottom: 1px solid;
+    font-size: 18px !important;
+    letter-spacing: 0px;
+    outline: 0;
+    border-radius: 0 !important;
+    margin-bottom: 10px;
+    height: 42.5px;
+}
+
+.select2-container--default .select2-selection--single .select2-selection__arrow {
+   height: 42.5px;
+}
+
+.woocommerce form .form-row label {
+    font-size: 16px;
+    font-weight: 700;
+    margin-bottom: 8px;
+    display: inline-block;
+    padding: 0;
+    text-transform: uppercase;
+}
+
+.woocommerce-cart .woocommerce {
+    width: 100%;
+}
+
+.woocommerce-cart table.cart td.actions .coupon .input-text {
+    width: initial;
+    border-radius: 0 !important;
+}
+
+.woocommerce .cart .button, .woocommerce .cart input.button {
+    float: none;
+    font-family: 'Futura PT';
+    font-weight: normal;
+    background: #ec5cb3;
+    color: #FFF;
+    font-weight: bold;
+    border-radius: 0;
+}
+
+.woocommerce-cart .wc-proceed-to-checkout a.checkout-button {
+    background: #bda1f4;
+    text-transform: uppercase;
+}
+
+.woocommerce a.button.alt:hover {
+    background: #6931c0;
+}
+
+.woocommerce table.shop_table {
+    border: 0;
+}
+
+.woocommerce table.shop_table td, .woocommerce table.shop_table th {
+    padding-top: 25px;
+    padding-bottom: 25px;
+}
+
+.woocommerce table.shop_table td.actions {
+    padding-left: 0;
+    padding-right: 0;
+}
+
+.woocommerce-cart table.cart td.actions .coupon .input-text {
+    padding: 6px 0 !important;
+    border: 0;
+    border-bottom: 1px solid;
+    font-size: 18px !important;
+    letter-spacing: 0px;
+    outline: 0;
+    margin-right: 10px;
+}
+
+.woocommerce button.button:hover {
+    background-color: #bda1f4;
+    text-decoration: none;
+    background-image: none;
+    color: #fff;
+}
+
+.woocommerce button.button:disabled, .woocommerce button.button:disabled[disabled] {
+    color: #FFF;
+}
+
+.woocommerce button.button:disabled:hover, .woocommerce button.button:disabled[disabled]:hover {
+    background: #bda1f4;
+    color: #FFF;
+}
+
+.woocommerce table.shop_table td, .woocommerce table.shop_table th {
+    text-align: center;
+}
+
+.woocommerce .woocommerce-checkout table.shop_table td, .woocommerce .woocommerce-checkout table.shop_table th {
+    text-align: initial;
+}
+
+.woocommerce table.shop_table thead td, .woocommerce table.shop_table thead th {
+    font-size: 16px;
+    font-weight: 700;
+    text-transform: uppercase;
+}
+
+.woocommerce .cart-collaterals .cart_totals, .woocommerce-page .cart-collaterals .cart_totals {
+    float: right;
+    width: 33.3333%;
+}
+
+.woocommerce table.shop_table tbody:first-child tr th, .woocommerce .woocommerce-checkout table.shop_table tbody:first-child tr th {
+    padding-left: 0;
+    text-align: left;
+}
+
+.woocommerce table.shop_table tbody:first-child tr td, .woocommerce .woocommerce-checkout table.shop_table tbody:first-child tr td {
+    text-align: right;
+    padding-right: 0;
+}
+
+.woocommerce .cart .button, .woocommerce .cart input.button {
+    outline: 0;
+}
+
+.woocommerce button.button {
+    background: #bda1f4;
+    color: #FFF;
+    font-family: 'Futura PT';
+    border-radius: 0;
+}
+
+.woocommerce-checkout #payment {
+    background: #f9f9f9;
+}
+
+.tribe-checkout-backlinks {
+    display: block;
+}
+
+.p-CardIcons.Input {
+    padding-right: 20px;
+}
+
+.payment_box.payment_method_woocommerce_payments {
+    background: transparent !important;
+}
+
+#add_payment_method #payment div.payment_box::before, .woocommerce-cart #payment div.payment_box::before, .woocommerce-checkout #payment div.payment_box::before {
+    display: none !important;
+}
+
+.payment_box.payment_method_woocommerce_payments {
+    padding: 1.5em;
+}
+
+label[for=payment_method_woocommerce_payments], label[for=payment_method_ppcp-gateway] {
+    font-weight: bold;
+    text-transform: uppercase; 
+}
+
+.tribe-attendee-meta {
+    display: none;
+}
+
+a.showcoupon {
+    color: #faf284;
+}
+
+.content_section .woocommerce {
+    padding-top: 120px;
+}
+
+#add_payment_method #payment div.payment_box, .woocommerce-cart #payment div.payment_box, .woocommerce-checkout #payment div.payment_box {
+    padding: 0 !important;
+}
+
+.p-PaymentElement-container {
+    margin: 0;
+}
+
+.payment_box.payment_method_ppcp-gateway p {
+    padding: 1em;
+}
+
+#card-panel input, .p-Input-input {
+    font-family: 'Arial', sans-serif; !important;
+}
+
+.wc_payment_method.payment_method_woocommerce_payments {
+    font-family: 'Arial', sans-serif; !important;
+}
+
+@media only screen and (max-width: 991px) {
+    .hero h1 {
+        font-size: 22vw;
+        line-height: 19vw;
+    }
+
+    .hero h1 span {
+        font-size: 22vw;
+        line-height: 19vw;
+    }
+
+    .hero h1 span:after {
+        width: 40px;
+        height: 40px;
+        top: 96%;
+        bottom: 0;
+        margin: 0 auto;
+        left: 0;
+        right: 0;
+    }
+
+    .fixed-top.scroll-header .logo-nav {
+        left: 15px;
+    }
+
+    .navbar-toggler-icon i {
+        color: #6931c0;
+        margin-top: 5px;
+        outline: 0;
+    }
+
+    .navbar-toggler {
+        outline: 0 !important;
+    }
+
+    .navbar-dark .navbar-nav .nav-link {
+        text-align: center;
+        padding: 25px 0;
+    }
+
+    .navbar-collapse.collapse.show {
+        padding-top: 40px;
+    }
+
+    .next-show .show-poster {
+        margin-top: -80px;
+        width: 90%;
+        margin-bottom: 0;
+    }
+
+    .poster-box {
+        margin-bottom: 30px;
+    }
+
+    .next-show h2 {
+        font-size: 60px;
+    }
+
+    .next-show .ticket-block {
+        padding: 0;
+    }
+
+    .entry .entry-content .event-tickets .tribe-dialog__wrapper.tribe-modal__wrapper--ar, .event-tickets .tribe-dialog__wrapper.tribe-modal__wrapper--ar {
+        height: initial !important;
+    }
+
+    .more-shows.show-list {
+        padding: 30px;
+    }
+
+    .performers .pf-com {
+        font-size: 32px;
+        line-height: 22px;
+    }
+
+    .headliner span, .mc span, .performers span {
+        font-size: 28px;
+    }
+
+    .single-show-list {
+        max-width: 100% !important;
+    }
+
+    .single-show-list .show-btn {
+        text-align: center !important;
+    }
+
+    .single-show-list {
+        border: 2px solid #ddd;
+    }
+
+    h3.block-title {
+        font-size: 30px;
+    }
+
+    h3.block-title span {
+        margin-left: -5px;
+        margin-right: -5px;
+        font-size: 28px;
+    }
+
+    .show-list h3 span {
+       font-size: 28px;
+    }
+
+    .whelans .whelans-info {
+        padding-right: 15px;
+    }
+
+    section.whelans {
+        padding: 0 30px;
+    }
+
+    .whelans .whelans-pic img {
+        width: 75%;
+    }
+
+    .ope-hrs {
+        margin-top: 20px;
+    }
+
+    .whelans .whelans-bg {
+        top: initial;
+        margin: 30px -30px;
+        width: calc(100% + 59px);
+        height: 180px;
+    }
+
+    .otd-title h2 {
+        font-size: 60px;
+    }
+
+    .otd-bg-text {
+        font-size: 90px;
+        top: -65px;
+    }
+
+    .otd-gradient {
+        top: -65px;
+        height: 100px;
+    }
+
+    .on-this-day .container {
+        background: none !important;
+    }
+
+    .cherry-share {
+        padding-left: 15px;
+        padding-right: 15px;
+    }
+
+    .pic-grid {
+        padding-top: 40px;
+    }
+
+    .footer-logo {
+        width: 100%;
+        margin-bottom: 30px;
+    }
+
+    .next-show h2 {
+        line-height: 40px;
+    }
+
+    .next-show h2.tag-lower {
+        font-size: 22px;
+        line-height: 25px;
+    }
+
+    .line-up-tag {
+        margin: 30px 0 0px;
+    }
+
+    .show-info div:first-child {
+        padding-right: initial;
+    }
+
+    .entry .entry-content .event-tickets .tribe-tickets__tickets-item, .event-tickets .tribe-tickets__tickets-item {
+        text-align: left;
+    }
+
+    .line-up-pics .w-100 {
+        display: none;
+    }
+
+    .event-reviews {
+        padding-left: 15px;
+        padding-right: 15px;
+    }
+
+    .single-show-list .show-logo svg {
+        padding: 0 10px;
+    }
+
+    .single-show-list {
+        padding: 30px 30px 35px;
+    }
+
+    .comic-quotes .quotes::before {
+        text-align: center;
+    }
+
+    .comic-page p {
+        width: 90%;
+    }
+
+    .contact-form {
+        padding: 30px;
+    }
+
+    .page-template-page-shows .hero {
+        display: none;
+    }
+
+    .page-template-page-shows .event-list.upcoming {
+        padding-top: 180px;
+    }
+
+    .event-template-default .inner-page.hero, .event-template-default .inner-page .hero-overlay {
+        min-height: 300px;
+        max-height: 300px;
+        height: 300px;
+    }
+
+    .woocommerce .cart-collaterals .cart_totals, .woocommerce-page .cart-collaterals .cart_totals {
+        float: none;
+        width: 100%;
+    }
+
+    .woocommerce-cart-form, .cart-collaterals {
+        padding: 0 30px;
+    }
+
+    .woocommerce table.shop_table_responsive tr:nth-child(2n) td, .woocommerce-page table.shop_table_responsive tr:nth-child(2n) td {
+        background-color: transparent;
+    }
+
+    .woocommerce-checkout .content_section {
+        padding: 0 30px;
+    }
+
+    .woocommerce-checkout .col2-set, .woocommerce-checkout .col1-set {
+        width: 100% !important;
+        float: none !important;
+    }
+
+    #customer_details+#wc_checkout_add_ons,
+    #order_review,
+    #order_review_heading {
+        width: 100% !important;
+        float: none;
+        margin-right: 0;
+        padding-right: 0;
+    }
+
+    .woocommerce-billing-fields__field-wrapper {
+        padding-right: 0;
+    }
+
+    .woocommerce-billing-fields h3, h3#order_review_heading {
+        text-transform: uppercase;
+        font-weight: bold;
+        font-size: 18px;
+        text-align: center;
+        margin-bottom: 20px;
+    }
+
+    h3#order_review_heading {
+        margin-top: 40px;
+    }
+
+    .tribe-checkout-backlinks {
+        text-align: center;
+    }
+
+    .woocommerce-checkout #payment {
+        background: transparent !important;
+    }
+
+    #add_payment_method #payment ul.payment_methods, .woocommerce-cart #payment ul.payment_methods, .woocommerce-checkout #payment ul.payment_methods, #add_payment_method #payment div.form-row, .woocommerce-cart #payment div.form-row, .woocommerce-checkout #payment div.form-row {
+        padding: 0;
+    }
+
+}
